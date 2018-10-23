@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+}
+
+html *{
+  box-sizing: border-box;
+}
+
+header {
+  background: silver;
+}
+
+footer {
+  background: #333;
+}
