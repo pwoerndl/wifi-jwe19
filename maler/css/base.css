@@ -1,6 +1,6 @@
 :root {
   --screen-max: 1200px;
-  --base-font: 'Montserrat', sans-serif;
+  --base-font: 'Montserrat', Tahoma, sans-serif;
   --base-font2: "Pridi", "Times New Roman", sans-serif;
 
   --font-color-light: var(--grey-dark);
@@ -8,6 +8,8 @@
   --grey-light: #fefefe;
   --grey-dark: #525252;
   --grey: grey;
+
+
 }
 
 @font-face {
@@ -126,19 +128,54 @@ footer ul {
 }
 
 footer .footer-top {
-  display: flex;
+
 }
 
 footer .footer-left {
-  flex: 1;
+
 }
 
 footer .footer-right {
-  flex: 1;
-  text-align: right;
+
 }
 
 footer .footer-bottom {
-  font-family: var(--base-font);
-  font-size: 100%;
+
+}
+
+
+@media screen and (min-width: 576px) {
+  footer .footer-top {
+    display: flex;
+  }
+
+  footer .footer-left {
+    flex: 1;
+  }
+
+  footer .footer-right {
+    text-align: right;
+  }
+
+  footer .footer-bottom {
+    font-family: var(--base-font);
+    font-size: 100%;
+  }
+
+  body {
+    background: lightblue;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
