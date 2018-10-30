@@ -1,0 +1,40 @@
+section.content-element {
+  display: block;
+  background: lightgrey;
+  position: relative;
+}
+
+.content-element .teaser {
+  position: relative;
+
+  background:
+  -webkit-linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.5)),
+  url(bild3.jpg);
+
+  background:
+  linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.5)),
+  url(../img/bild3.jpg);
+
+background-size: cover;
+height: 35vw;
+
+}
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (min-width: 576px) {
+
+  .content-element .teaser p {
+    position: relative;
+    padding-right: 45%;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .content-element .teaser p {
+    min-height: none;
+    padding-right: 45%;
+}
