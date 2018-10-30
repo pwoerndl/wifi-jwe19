@@ -153,6 +153,8 @@ header .inner-wrapper {
 
 header h1 {
   position: absolute;
+  font-family: var(--base-font2);
+  font-size: normal;
   bottom: 0;
   left: 0;
   color: white;
