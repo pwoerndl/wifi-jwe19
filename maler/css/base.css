@@ -146,6 +146,12 @@ footer .inner-wrapper {
   margin: 0 auto;
 }
 
+form .inner-wrapper {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+}
+
 header .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);

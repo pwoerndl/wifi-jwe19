@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formular Test</title>
+  <link rel="stylesheet" href="formularstyle.css">
+</head>
+
+<body>
+  <form method="get" action="formula.html">
+    <p>
+      <label for="female">
+        Frau
+      </label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="male">
+        Mann
+      </label>
+      <input type="radio" name="gender" id="male" value="male">
+    </p>
+    <p>
+      <label for="firstname">
+        Vorname
+      </label>
+      <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname">
+      <br />
+    </p>
+    <p>
+      <label for="lastname">
+        Nachname
+      </label>
+      <input type="text" name="lastname" id="lastname" value="" placeholder="Nachname">
+      <br>
+    </p>
+
+<p>
+<label for="email"></label>
+<input type="email" name="email" id="email" value="" placeholder="yourmail@domain.com">
+</p>
+
+    <p>
+      <label for="password">
+        Passwort
+      </label>
+      <input type="password" name="Passwort" id="Passwort" value="" placeholder="Passwort">
+      <br>
+      <p>
+<label for="socks">Wie viele paar Socken kannst du gleichzeitig tragen?</label>
+<input type="number" name="socks" id="socks" value="" min="4" max="30" step="2" placeholder="">
+      </p>
+
+<p>
+<label for="animalfriend">Welcher Typ Mensch bist du?</label>
+<select id="animalfriend" name="animalfriend" multiple>
+  <option value="Katze123">Katzenmensch</option>
+  <option value="Hund123">Hundemensch</option>
+  <option value="Hamster123">Hamstermensch</option>
+  <option value="Vogel123">Vogelmensch</option>
+
+</select>
+</p>
+
+<p>
+  <label for="notes"></label>
+  <textarea name="notes" rows="8" cols="80" placeholder="Inhalt"></textarea>
+</p>
+
+<p>
+  <label for="agb">AGB, ja Ok!</label>
+<input type="checkbox" name="agb" id="agb" value="ok" required>
+</p>
+
+<p>
+<input type="submit" name="submit" id="submit" value="Jetzt absenden">
+<button type="button" name="button">Absenden</button>
+<input type="reset" name="resez" value="Alles löschen?">
+</p>
+
+  </form>
+</body>
+
+</html>
