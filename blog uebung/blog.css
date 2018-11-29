@@ -1,5 +1,9 @@
 
 
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -38,35 +42,75 @@ header#mainheader img {
 }
 
 .balken {
+  margin-top: 260px;
+  padding-top: 4pt;
+  position: fixed;
+  height: 30pt;
+  background-color: white;
   width: 100%;
-  z-index: 100;
+  font-family: sans-serif;
+  text-align: right;
+  font-size: 20pt;
+  color: lightblue;
+  filter: opacity(.5);
 }
 
 
 nav {
     float: left;
     width: 30%;
+    height:40%;
     background: lightblue;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 
 nav ul {
-    list-style-type: none;
     padding: 0;
 }
 
+nav ul a {
+  text-decoration: none;
+  line-height: 20pt;
+  font-family: sans-serif;
+}
+
+nav ul a:hover {
+  color: white;
+  width: 100%;
+
+}
+
 article {
+
     float: left;
     padding: 20px;
     width: 70%;
+    height: 40%;
     background-color: lightgrey;
    }
 
 footer#copyright {
-
+  height: 30pt;
         background-color: #777;
+        position: relative;
         padding: 10px;
-        text-align: right;
+        text-align: center;
+        text-decoration: none;
+        font-family: sans-serif;
         color: white;
     }
+
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+       }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+        }
