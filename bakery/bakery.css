@@ -1,0 +1,114 @@
+
+/*var*/
+:root {
+    --brown: #D0B085;
+    --grey: #707070;
+    --white: #FFFFFF;
+
+    /*BUTTON VARIABLEN*/
+    --btn-border: solid var(--brown) 2px;
+    --btn-padding: 0.75em 1.2em 0.45em;
+    --btn-margin: 1em auto;
+
+
+    /* Costum Breakpoints*/
+
+    --min-xs: 480px;
+    --min-sm: 768px;
+    --min-md: 992px;
+    --min-lg: 1280px;
+    --min-xlg: 1600px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700");
+
+html, body {
+margin: 0;
+
+}
+* {
+
+  font-family: "Josefin Sans";
+}
+
+
+#top {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  max-width: var(--min-lg);
+  background-color: white;
+  margin: 0 auto 0 auto;
+}
+
+#logo {
+  width: 250px;
+   }
+
+#logo img {
+  margin: 20px;
+  width: 100%;
+}
+
+#topnav {
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+#topnav a {
+  padding: 15px;
+  width: auto;
+  text-decoration: none;
+  color: var(--grey-dark);
+}
+
+header#mainheader {
+  position: relative;
+  padding-left: 0;
+  width: 100%;
+  height: 400px;
+  background: lightgreen;
+  overflow: hidden;
+}
+
+header#mainheader img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0;
+}
+
+#textbox {
+  text-align: -webkit-center;
+}
+
+article {
+  max-width: 60%;
+  text-align: center;
+}
+
+article h1 {
+  color: var(--grey);
+}
+
+article p {
+  color: var(--grey);
+}
+
+#small-footer {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background-color: grey;
+  text-align: center;
+  align-items: center;
+}
